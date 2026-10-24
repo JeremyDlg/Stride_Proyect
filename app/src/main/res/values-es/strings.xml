@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Stride</string>
+    <string name="tagline">Constancia, un día a la vez.</string>
+
+    <!-- Common -->
+    <string name="action_continue">Continuar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_back">Atrás</string>
+    <string name="label_optional">(opcional)</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Local login -->
+    <string name="login_this_week">Esta semana</string>
+    <string name="login_subtitle">Dinos cómo llamarte para empezar.</string>
+    <string name="label_name">Nombre</string>
+    <string name="label_email">Correo</string>
+    <string name="hint_email">tucorreo@ejemplo.com</string>
+    <string name="login_privacy_note">Tus datos se guardan solo en este teléfono.</string>
+    <string name="error_invalid_name">Escribe un nombre (máximo 40 caracteres).</string>
+    <string name="error_invalid_email">Escribe un correo válido.</string>
+
+    <!-- Home -->
+    <string name="home_title">Hoy</string>
+    <string name="home_progress">%1$d/%2$d</string>
+    <string name="filter_search">Buscar</string>
+    <string name="filter_all">Todos</string>
+    <string name="filter_pending">Pendientes</string>
+    <string name="filter_done">Hechos</string>
+    <string name="filter_daily">Diarios</string>
+    <string name="filter_weekly">Semanales</string>
+    <string name="home_empty">Ningún hábito coincide con tu filtro.</string>
+    <string name="home_empty_no_habits">Aún no tienes hábitos. Toca + para crear uno.</string>
+    <string name="habit_completed_content_description">Marcar %1$s como cumplido</string>
+    <plurals name="streak_days">
+        <item quantity="one">%d día</item>
+        <item quantity="other">%d días</item>
+    </plurals>
+
+    <!-- Create / edit habit -->
+    <string name="form_new_title">Nuevo hábito</string>
+    <string name="form_edit_title">Editar hábito</string>
+    <string name="label_icon">Ícono</string>
+    <string name="hint_icon">Elige un ícono o toca + para usar cualquier emoji.</string>
+    <string name="label_color">Color</string>
+    <string name="hint_color">Toca el círculo de colores para elegir el tuyo.</string>
+    <string name="label_frequency">Frecuencia</string>
+    <string name="frequency_daily">Diario</string>
+    <string name="frequency_weekly">Semanal</string>
+    <string name="label_place">Lugar</string>
+    <string name="place_none">Sin lugar seleccionado</string>
+    <string name="error_name_required">El hábito necesita un nombre.</string>
+    <string name="action_save_habit">Guardar hábito</string>
+
+    <!-- Habit detail -->
+    <string name="detail_streak_label">días de racha</string>
+    <string name="detail_best_streak">Récord: %1$d</string>
+    <string name="detail_month_completion">%1$d%% de cumplimiento este mes</string>
+    <string name="legend_done">Hecho</string>
+    <string name="legend_missed">Falló</string>
+    <string-array name="weekday_initials">
+        <item>L</item>
+        <item>M</item>
+        <item>X</item>
+        <item>J</item>
+        <item>V</item>
+        <item>S</item>
+        <item>D</item>
+    </string-array>
+
+    <!-- Map -->
+    <string name="map_title">Mapa</string>
+    <string name="map_subtitle">Dónde cumples tus hábitos</string>
+    <string name="map_empty">Agrega un lugar a un hábito para verlo aquí.</string>
+    <plurals name="times_completed">
+        <item quantity="one">%d vez</item>
+        <item quantity="other">%d veces</item>
+    </plurals>
+
+    <!-- Choose location -->
+    <string name="location_title">Elegir ubicación</string>
+    <string name="location_search_hint">Buscar lugar</string>
+    <string name="location_move_pin">Mueve el pin para ajustar</string>
+    <string name="location_save">Guardar ubicación</string>
+    <string name="location_my_location">Mi ubicación</string>
+
+    <!-- Dialogs -->
+    <string name="delete_title">¿Eliminar este hábito?</string>
+    <string name="delete_message">Se borrará «%1$s» junto con su historial. Esta acción no se puede deshacer.</string>
+    <string name="color_picker_title">Elige un color</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_edit">Editar nombre y correo</string>
+    <string name="profile_dark_mode">Modo oscuro</string>
+    <string name="profile_language">Idioma</string>
+    <string name="profile_language_value">Español</string>
+    <string name="profile_logout">Cerrar sesión</string>
+
+    <!-- Profile photo -->
+    <string name="photo_title">Foto de perfil</string>
+    <string name="photo_take">Tomar foto</string>
+    <string name="photo_choose_gallery">Elegir de la galería</string>
+    <string name="photo_remove">Quitar foto</string>
+    <string name="permission_camera_denied">Se necesita el permiso de la cámara para tomar una foto.</string>
+    <string name="permission_location_denied">Se necesita el permiso de ubicación para mostrar tu posición.</string>
+</resources>
