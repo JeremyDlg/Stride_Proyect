@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Stride</string>
+    <string name="tagline">Consistency, one day at a time.</string>
+
+    <!-- Common -->
+    <string name="action_continue">Continue</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_back">Back</string>
+    <string name="label_optional">(optional)</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Local login -->
+    <string name="login_this_week">This week</string>
+    <string name="login_subtitle">Tell us what to call you to get started.</string>
+    <string name="label_name">Name</string>
+    <string name="label_email">Email</string>
+    <string name="hint_email">youremail@example.com</string>
+    <string name="login_privacy_note">Your data is stored only on this phone.</string>
+    <string name="error_invalid_name">Enter a name (up to 40 characters).</string>
+    <string name="error_invalid_email">Enter a valid email address.</string>
+
+    <!-- Home -->
+    <string name="home_title">Today</string>
+    <string name="home_progress">%1$d/%2$d</string>
+    <string name="filter_search">Search</string>
+    <string name="filter_all">All</string>
+    <string name="filter_pending">Pending</string>
+    <string name="filter_done">Done</string>
+    <string name="filter_daily">Daily</string>
+    <string name="filter_weekly">Weekly</string>
+    <string name="home_empty">No habits match your filter.</string>
+    <string name="home_empty_no_habits">You have no habits yet. Tap + to create one.</string>
+    <string name="habit_completed_content_description">Mark %1$s as completed</string>
+    <plurals name="streak_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+
+    <!-- Create / edit habit -->
+    <string name="form_new_title">New habit</string>
+    <string name="form_edit_title">Edit habit</string>
+    <string name="label_icon">Icon</string>
+    <string name="hint_icon">Choose an icon or tap + to use any emoji.</string>
+    <string name="label_color">Color</string>
+    <string name="hint_color">Tap the color circle to pick your own.</string>
+    <string name="label_frequency">Frequency</string>
+    <string name="frequency_daily">Daily</string>
+    <string name="frequency_weekly">Weekly</string>
+    <string name="label_place">Place</string>
+    <string name="place_none">No place selected</string>
+    <string name="error_name_required">The habit needs a name.</string>
+    <string name="action_save_habit">Save habit</string>
+
+    <!-- Habit detail -->
+    <string name="detail_streak_label">day streak</string>
+    <string name="detail_best_streak">Best: %1$d</string>
+    <string name="detail_month_completion">%1$d%% completion this month</string>
+    <string name="legend_done">Done</string>
+    <string name="legend_missed">Missed</string>
+    <string-array name="weekday_initials">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+
+    <!-- Map -->
+    <string name="map_title">Map</string>
+    <string name="map_subtitle">Where you complete your habits</string>
+    <string name="map_empty">Add a place to a habit to see it here.</string>
+    <plurals name="times_completed">
+        <item quantity="one">%d time</item>
+        <item quantity="other">%d times</item>
+    </plurals>
+
+    <!-- Choose location -->
+    <string name="location_title">Choose location</string>
+    <string name="location_search_hint">Search place</string>
+    <string name="location_move_pin">Move the pin to adjust</string>
+    <string name="location_save">Save location</string>
+    <string name="location_my_location">My location</string>
+
+    <!-- Dialogs -->
+    <string name="delete_title">Delete this habit?</string>
+    <string name="delete_message">\"%1$s\" and its history will be deleted. This action cannot be undone.</string>
+    <string name="color_picker_title">Choose a color</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_edit">Edit name and email</string>
+    <string name="profile_dark_mode">Dark mode</string>
+    <string name="profile_language">Language</string>
+    <string name="profile_language_value">English</string>
+    <string name="profile_logout">Log out</string>
+
+    <!-- Profile photo -->
+    <string name="photo_title">Profile photo</string>
+    <string name="photo_take">Take photo</string>
+    <string name="photo_choose_gallery">Choose from gallery</string>
+    <string name="photo_remove">Remove photo</string>
+    <string name="permission_camera_denied">Camera permission is needed to take a photo.</string>
+    <string name="permission_location_denied">Location permission is needed to show your position.</string>
+</resources>
