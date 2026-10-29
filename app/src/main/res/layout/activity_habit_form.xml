@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/cancelButton"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="8dp"
+                android:text="@string/action_cancel"
+                android:textColor="@color/stride_accent_light"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/formTitle"
+                style="@style/Stride.Body"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/form_new_title"
+                android:textStyle="bold" />
+            <View android:layout_width="64dp" android:layout_height="1dp" />
+        </LinearLayout>
+
+        <TextView android:layout_marginTop="18dp" android:layout_marginBottom="8dp" style="@style/Stride.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_name" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/habitNameInput"
+            style="@style/Stride.Input"
+            android:hint="@string/hint_habit_name"
+            android:inputType="textCapSentences" />
+
+        <TextView android:layout_marginTop="18dp" android:layout_marginBottom="8dp" style="@style/Stride.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_icon" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <FrameLayout
+                    android:id="@+id/iconDrop"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_option_selected">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_drop"
+                        android:tint="@color/stride_accent_light" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/iconActivity"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_option">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_activity"
+                        android:tint="@color/stride_muted" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/iconBook"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_option">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_book"
+                        android:tint="@color/stride_muted" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/iconSun"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_option">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_sun"
+                        android:tint="@color/stride_muted" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/iconLeaf"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_option">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_leaf"
+                        android:tint="@color/stride_muted" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/iconEmoji"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_icon_option_add">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_plus"
+                        android:tint="@color/stride_accent_light" />
+                </FrameLayout>
+        </LinearLayout>
+        <TextView style="@style/Stride.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/hint_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="8dp"
+                style="@style/Stride.Label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_color" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hexLabel"
+                style="@style/Stride.Chip"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="3dp"
+                android:textSize="12sp"
+                tools:text="#007AFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
+                    android:padding="4dp" android:background="@drawable/bg_dot_ring">
+                    <View
+                        android:id="@+id/colorBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_dot"
+                        android:backgroundTint="@color/stride_accent" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
+                    android:padding="4dp">
+                    <View
+                        android:id="@+id/colorCyan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_dot"
+                        android:backgroundTint="@color/stride_cyan" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
+                    android:padding="4dp">
+                    <View
+                        android:id="@+id/colorGold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_dot"
+                        android:backgroundTint="@color/stride_gold" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
+                    android:padding="4dp">
+                    <View
+                        android:id="@+id/colorGreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_dot"
+                        android:backgroundTint="@color/stride_ok" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="4dp">
+                    <ImageView
+                        android:id="@+id/colorCustom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_color_picker"
+                        android:contentDescription="@string/cd_pick_color"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_plus" />
+                </FrameLayout>
+        </LinearLayout>
+        <TextView style="@style/Stride.Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/hint_color" />
+
+        <TextView android:layout_marginTop="18dp" android:layout_marginBottom="8dp" style="@style/Stride.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_frequency" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_segment"
+            android:orientation="horizontal"
+            android:padding="4dp">
+            <TextView
+                android:id="@+id/frequencyDaily"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_segment_selected"
+                android:gravity="center"
+                android:padding="9dp"
+                android:text="@string/frequency_daily"
+                android:textColor="@color/stride_on_accent"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/frequencyWeekly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="9dp"
+                android:text="@string/frequency_weekly"
+                android:textColor="@color/stride_muted"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView android:layout_marginTop="18dp" android:layout_marginBottom="8dp" style="@style/Stride.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_place_optional" />
+        <LinearLayout
+            android:id="@+id/placeRow"
+            style="@style/Stride.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_pin"
+                android:tint="@color/stride_accent_light" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/placeText"
+                style="@style/Stride.Body"
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:hint="@string/place_none"
+                android:textColorHint="@color/stride_muted"
+                android:textSize="14sp"
+                tools:text="La Sabana Park" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_chevron_right"
+                android:tint="@color/stride_muted" />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButton"
+            style="@style/Stride.Button"
+            android:layout_marginTop="24dp"
+            android:text="@string/action_save_habit" />
+    </LinearLayout>
+</ScrollView>

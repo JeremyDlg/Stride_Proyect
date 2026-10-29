@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Static map-like background. It will be replaced by the real map in a later task. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stride_surface">
+
+    <View
+        android:layout_width="700dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bg_road"
+        android:rotation="-18" />
+    <View
+        android:layout_width="12dp"
+        android:layout_height="700dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="-100dp"
+        android:background="@drawable/bg_road"
+        android:rotation="8" />
+    <View
+        android:layout_width="700dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/bg_road"
+        android:rotation="6" />
+    <View
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_park" />
+    <View
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/bg_park" />
+</FrameLayout>

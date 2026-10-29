@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="26dp">
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_handle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Stride.Body"
+        android:layout_marginBottom="4dp"
+        android:text="@string/photo_title"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/rowTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_icon_gradient_tile"
+            android:importantForAccessibility="no"
+            android:padding="11dp"
+            android:src="@drawable/ic_camera"
+            android:tint="@color/stride_on_accent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Stride.Body"
+            android:layout_marginStart="14dp"
+            android:text="@string/photo_take"
+            android:textColor="@color/stride_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rowChooseGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_icon_gradient_tile"
+            android:importantForAccessibility="no"
+            android:padding="11dp"
+            android:src="@drawable/ic_image"
+            android:tint="@color/stride_on_accent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Stride.Body"
+            android:layout_marginStart="14dp"
+            android:text="@string/photo_choose_gallery"
+            android:textColor="@color/stride_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rowRemovePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_danger_soft"
+            android:importantForAccessibility="no"
+            android:padding="11dp"
+            android:src="@drawable/ic_trash"
+            android:tint="@color/stride_danger" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Stride.Body"
+            android:layout_marginStart="14dp"
+            android:text="@string/photo_remove"
+            android:textColor="@color/stride_danger"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

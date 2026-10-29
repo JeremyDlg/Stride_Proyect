@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="24dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/Stride.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_title" />
+                <TextView
+                    android:id="@+id/dateText"
+                    style="@style/Stride.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    tools:text="Monday, October 12" />
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="68dp"
+                android:layout_height="68dp">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/progressRing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="100"
+                    android:progress="50"
+                    app:indicatorColor="@color/stride_accent"
+                    app:indicatorSize="64dp"
+                    app:trackColor="@color/stride_surface_alt"
+                    app:trackThickness="7dp" />
+                <TextView
+                    android:id="@+id/progressText"
+                    style="@style/Stride.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:text="2/4" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="20dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipSearch"
+                    style="@style/Stride.Chip"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/stride_muted"
+                    android:text="@string/filter_search" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipAll"
+                    style="@style/Stride.Chip"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_chip_selected"
+                    android:text="@string/filter_all"
+                    android:textColor="@color/stride_accent_light" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipPending"
+                    style="@style/Stride.Chip"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/filter_pending" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipDone"
+                    style="@style/Stride.Chip"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/filter_done" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipDaily"
+                    style="@style/Stride.Chip"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/filter_daily" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipWeekly"
+                    style="@style/Stride.Chip"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/filter_weekly" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/habitList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="80dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_habit" />
+            <TextView
+                android:id="@+id/emptyText"
+                style="@style/Stride.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="32dp"
+                android:text="@string/home_empty_no_habits"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <include
+            layout="@layout/view_bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addHabitButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/bg_fab"
+        android:contentDescription="@string/cd_add_habit"
+        android:elevation="6dp"
+        android:padding="13dp"
+        android:src="@drawable/ic_plus" />
+</FrameLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text -->
+    <style name="Stride.Title" parent="">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/stride_text</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+    <style name="Stride.Heading" parent="">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/stride_text</item>
+    </style>
+    <style name="Stride.Body" parent="">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/stride_text</item>
+    </style>
+    <style name="Stride.Caption" parent="">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/stride_muted</item>
+    </style>
+    <style name="Stride.Small" parent="">
+        <item name="android:textSize">11.5sp</item>
+        <item name="android:textColor">@color/stride_muted</item>
+    </style>
+    <style name="Stride.Label" parent="">
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/stride_muted</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- Buttons (TextViews with a background) -->
+    <style name="Stride.Button" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/stride_on_accent</item>
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="Stride.Button.Ghost">
+        <item name="android:textColor">@color/stride_text</item>
+        <item name="android:background">@drawable/bg_button_ghost</item>
+    </style>
+
+    <!-- Chips, inputs and cards -->
+    <style name="Stride.Chip" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">13dp</item>
+        <item name="android:paddingEnd">13dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/stride_text</item>
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="Stride.Input" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/stride_text</item>
+        <item name="android:textColorHint">@color/stride_muted</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+    </style>
+    <style name="Stride.Card" parent="">
+        <item name="android:background">@drawable/bg_card</item>
+    </style>
+    <style name="Stride.CircleImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
