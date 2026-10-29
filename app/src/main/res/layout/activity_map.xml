@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        style="@style/Stride.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/map_title" />
+    <TextView
+        style="@style/Stride.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/map_subtitle" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/stride_surface"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/stride_line"
+        app:strokeWidth="1dp">
+
+        <include layout="@layout/view_map_placeholder" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pinLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/pinExercise"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_pin_gradient"
+                android:contentDescription="@string/cd_map_pin"
+                android:padding="11dp"
+                android:src="@drawable/ic_activity"
+                android:tint="@color/stride_on_accent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.40"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.34" />
+            <ImageView
+                android:id="@+id/pinReading"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_pin_gold"
+                android:contentDescription="@string/cd_map_pin"
+                android:padding="8dp"
+                android:src="@drawable/ic_book"
+                android:tint="@color/stride_on_accent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15" />
+            <ImageView
+                android:id="@+id/pinMeditate"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_pin_cyan"
+                android:contentDescription="@string/cd_map_pin"
+                android:padding="8dp"
+                android:src="@drawable/ic_sun"
+                android:tint="@color/stride_on_accent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.72"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.22" />
+            <ImageView
+                android:id="@+id/pinWater"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_pin_green"
+                android:contentDescription="@string/cd_map_pin"
+                android:padding="8dp"
+                android:src="@drawable/ic_drop"
+                android:tint="@color/stride_on_accent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.60" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/myLocationButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_circle_button"
+            android:contentDescription="@string/cd_my_location"
+            android:padding="9dp"
+            android:src="@drawable/ic_target"
+            android:tint="@color/stride_accent_light" />
+
+        <LinearLayout
+            android:id="@+id/pinInfoCard"
+            style="@style/Stride.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/pinInfoIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_icon_tile"
+                android:importantForAccessibility="no"
+                android:padding="9dp"
+                android:src="@drawable/ic_activity"
+                android:tint="@color/stride_accent_light" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pinInfoName"
+                    style="@style/Stride.Body"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:text="Central Gym" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pinInfoDetail"
+                    style="@style/Stride.Small"
+                    tools:text="Exercise · 14 times" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_chevron_right"
+                android:tint="@color/stride_muted" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <include
+        layout="@layout/view_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Stride.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="14dp"
+    android:paddingVertical="13dp">
+
+    <ImageView
+        android:id="@+id/habitIcon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/bg_icon_tile"
+        android:importantForAccessibility="no"
+        android:padding="10dp"
+        android:src="@drawable/ic_drop"
+        android:tint="@color/stride_accent_light" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/habitName"
+            style="@style/Stride.Body"
+            android:textStyle="bold"
+            tools:text="Drink water" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/habitStreak"
+            style="@style/Stride.Small"
+            android:layout_marginTop="2dp"
+            android:drawableStart="@drawable/ic_flame_small"
+            android:drawablePadding="4dp"
+            android:drawableTint="@color/stride_gold"
+            tools:text="12 days" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/habitCheck"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/bg_check_off" />
+</LinearLayout>

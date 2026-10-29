@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stride_bg">#0B0F1A</color>
+    <color name="stride_surface">#141A29</color>
+    <color name="stride_surface_alt">#1D2538</color>
+    <color name="stride_text">#F4F6FB</color>
+    <color name="stride_muted">#8B94A9</color>
+    <color name="stride_accent">#007AFF</color>
+    <color name="stride_accent_light">#66B3FF</color>
+    <color name="stride_cyan">#00C7FF</color>
+    <color name="stride_gold">#FBBF24</color>
+    <color name="stride_ok">#30D158</color>
+    <color name="stride_danger">#FF453A</color>
+    <color name="stride_line">#12FFFFFF</color>
+    <color name="stride_accent_soft">#33007AFF</color>
+    <color name="stride_gold_soft">#33FBBF24</color>
+    <color name="stride_green_soft">#2E30D158</color>
+    <color name="stride_danger_soft">#2EFF453A</color>
+    <color name="stride_on_accent">#FFFFFF</color>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cancelButton"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="@string/action_cancel"
+            android:textColor="@color/stride_accent_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_height="wrap_content"
+            style="@style/Stride.Body"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/location_title"
+            android:textStyle="bold" />
+        <View android:layout_width="64dp" android:layout_height="1dp" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchInput"
+        style="@style/Stride.Input"
+        android:layout_marginTop="14dp"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/stride_muted"
+        android:hint="@string/location_search_hint"
+        android:imeOptions="actionSearch" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/stride_surface"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/stride_line"
+        app:strokeWidth="1dp">
+
+        <include layout="@layout/view_map_placeholder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Stride.Chip"
+            android:layout_gravity="top|start"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_chip"
+            android:text="@string/location_move_pin"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/myLocationButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_circle_button"
+            android:contentDescription="@string/cd_my_location"
+            android:padding="9dp"
+            android:src="@drawable/ic_target"
+            android:tint="@color/stride_accent_light" />
+
+        <ImageView
+            android:id="@+id/centerPin"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_pin_gradient"
+            android:contentDescription="@string/cd_map_pin"
+            android:padding="11dp"
+            android:src="@drawable/ic_pin"
+            android:tint="@color/stride_on_accent" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        style="@style/Stride.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="14dp">
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_icon_tile"
+            android:importantForAccessibility="no"
+            android:padding="10dp"
+            android:src="@drawable/ic_pin"
+            android:tint="@color/stride_accent_light" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/placeNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/location_place_name_hint"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="0dp"
+                android:textColor="@color/stride_text"
+                android:textColorHint="@color/stride_muted"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="La Sabana Park" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/coordinatesText"
+                style="@style/Stride.Small"
+                android:layout_marginTop="2dp"
+                tools:text="9.9366, -84.1035" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveLocationButton"
+        style="@style/Stride.Button"
+        android:layout_marginTop="12dp"
+        android:text="@string/location_save" />
+</LinearLayout>
