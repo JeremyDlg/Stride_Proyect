@@ -137,7 +137,6 @@
     <string name="TextPhotoChooseGallery">Choose from gallery</string>
     <string name="TextPhotoRemove">Remove photo</string>
     <string name="TextPhotoRemoved">Photo removed</string>
-    <string name="TextFeatureComingSoon">Coming soon</string>
     <string name="TextPermissionCameraDenied">Camera permission is needed to take a photo.</string>
     <string name="TextPermissionLocationDenied">Location permission is needed to show your position.</string>
 

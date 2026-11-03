@@ -75,7 +75,7 @@
     <!-- Create / edit habit -->
     <string name="TextFormNewTitle">Nuevo hábito</string>
     <string name="TextFormEditTitle">Editar hábito</string>
-    <string name="TextHabitNameHint">p. ej. Leer 20 minutos</string>
+    <string name="TextHabitNameHint">ej. Leer 20 minutos</string>
     <string name="TextIcon">Ícono</string>
     <string name="TextIconHint">Elige un ícono o toca + para usar cualquier emoji.</string>
     <string name="TextColor">Color</string>
@@ -150,7 +150,6 @@
     <string name="TextPhotoChooseGallery">Elegir de la galería</string>
     <string name="TextPhotoRemove">Quitar foto</string>
     <string name="TextPhotoRemoved">Foto eliminada</string>
-    <string name="TextFeatureComingSoon">Próximamente</string>
     <string name="TextPermissionCameraDenied">Se necesita el permiso de la cámara para tomar una foto.</string>
     <string name="TextPermissionLocationDenied">Se necesita el permiso de ubicación para mostrar tu posición.</string>
 
