@@ -1,115 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+
     <!-- App -->
     <string name="app_name">Stride</string>
-    <string name="tagline">Consistency, one day at a time.</string>
+    <string name="TextTagline">Consistency, one day at a time.</string>
+
+
 
     <!-- Common -->
-    <string name="action_continue">Continue</string>
-    <string name="action_cancel">Cancel</string>
-    <string name="action_save">Save</string>
-    <string name="action_edit">Edit</string>
-    <string name="action_delete">Delete</string>
-    <string name="action_back">Back</string>
-    <string name="label_optional">(optional)</string>
+    <string name="TextContinue">Continue</string>
+    <string name="TextCancel">Cancel</string>
+    <string name="TextSave">Save</string>
+    <string name="TextEdit">Edit</string>
+    <string name="TextDelete">Delete</string>
+    <string name="TextBack">Back</string>
+    <string name="TextOptional">(optional)</string>
+
 
     <!-- Navigation -->
-    <string name="nav_home">Home</string>
-    <string name="nav_map">Map</string>
-    <string name="nav_profile">Profile</string>
+    <string name="TextNavHome">Home</string>
+    <string name="TextNavMap">Map</string>
+    <string name="TextNavProfile">Profile</string>
+
+
+    <!-- Weekdays -->
+    <string name="TextWeekdayInitialMon">M</string>
+    <string name="TextWeekdayInitialTue">T</string>
+    <string name="TextWeekdayInitialWed">W</string>
+    <string name="TextWeekdayInitialThu">T</string>
+    <string name="TextWeekdayInitialFri">F</string>
+    <string name="TextWeekdayInitialSat">S</string>
+    <string name="TextWeekdayInitialSun">S</string>
+
 
     <!-- Local login -->
-    <string name="login_this_week">This week</string>
-    <string name="login_subtitle">Tell us what to call you to get started.</string>
-    <string name="label_name">Name</string>
-    <string name="label_email">Email</string>
-    <string name="hint_email">youremail@example.com</string>
-    <string name="login_privacy_note">Your data is stored only on this phone.</string>
-    <string name="error_invalid_name">Enter a name (up to 40 characters).</string>
-    <string name="error_invalid_email">Enter a valid email address.</string>
+    <string name="TextLoginSubtitle">Tell us what to call you to get started.</string>
+    <string name="TextName">Name</string>
+    <string name="TextEmail">Email</string>
+    <string name="TextNameHint">Your name</string>
+    <string name="TextEmailHint">youremail@example.com</string>
+    <string name="TextLoginPrivacyNote">Your data is stored only on this phone.</string>
+    <string name="TextInvalidNameError">Enter a name (up to 40 characters).</string>
+    <string name="TextInvalidEmailError">Enter a valid email address.</string>
+    <string name="TextWelcome">Welcome</string>
+
 
     <!-- Home -->
-    <string name="home_title">Today</string>
-    <string name="home_progress">%1$d/%2$d</string>
-    <string name="filter_search">Search</string>
-    <string name="filter_all">All</string>
-    <string name="filter_pending">Pending</string>
-    <string name="filter_done">Done</string>
-    <string name="filter_daily">Daily</string>
-    <string name="filter_weekly">Weekly</string>
-    <string name="home_empty">No habits match your filter.</string>
-    <string name="home_empty_no_habits">You have no habits yet. Tap + to create one.</string>
-    <string name="habit_completed_content_description">Mark %1$s as completed</string>
-    <plurals name="streak_days">
-        <item quantity="one">%d day</item>
-        <item quantity="other">%d days</item>
-    </plurals>
+    <string name="TextHomeTitle">Today</string>
+    <string name="TextFilterSearch">Search</string>
+    <string name="TextFilterAll">All</string>
+    <string name="TextFilterPending">Pending</string>
+    <string name="TextFilterDone">Done</string>
+    <string name="TextFilterDaily">Daily</string>
+    <string name="TextFilterWeekly">Weekly</string>
+    <string name="TextHomeEmpty">No habits match your filter.</string>
+    <string name="TextHomeEmptyNoHabits">You have no habits yet. Tap + to create one.</string>
+    <string name="TextHabitCompletedContentDescription">Mark habit as completed</string>
+    <string name="TextAddHabitDescription">Add habit</string>
+
+
+    <!-- Words used with numbers -->
+    <string name="TextDays">days</string>
+    <string name="TextTimes">times</string>
+
 
     <!-- Create / edit habit -->
-    <string name="form_new_title">New habit</string>
-    <string name="form_edit_title">Edit habit</string>
-    <string name="label_icon">Icon</string>
-    <string name="hint_icon">Choose an icon or tap + to use any emoji.</string>
-    <string name="label_color">Color</string>
-    <string name="hint_color">Tap the color circle to pick your own.</string>
-    <string name="label_frequency">Frequency</string>
-    <string name="frequency_daily">Daily</string>
-    <string name="frequency_weekly">Weekly</string>
-    <string name="label_place">Place</string>
-    <string name="place_none">No place selected</string>
-    <string name="error_name_required">The habit needs a name.</string>
-    <string name="action_save_habit">Save habit</string>
+    <string name="TextFormNewTitle">New habit</string>
+    <string name="TextFormEditTitle">Edit habit</string>
+    <string name="TextHabitNameHint">e.g. Read 20 minutes</string>
+    <string name="TextIcon">Icon</string>
+    <string name="TextIconHint">Choose an icon or tap + to use any emoji.</string>
+    <string name="TextColor">Color</string>
+    <string name="TextColorHint">Tap the color circle to pick your own.</string>
+    <string name="TextPickColorDescription">Pick a custom color</string>
+    <string name="TextFrequency">Frequency</string>
+    <string name="TextFrequencyDaily">Daily</string>
+    <string name="TextFrequencyWeekly">Weekly</string>
+    <string name="TextPlace">Place</string>
+    <string name="TextPlaceOptional">Place (optional)</string>
+    <string name="TextPlaceNone">No place selected</string>
+    <string name="TextNameRequiredError">The habit needs a name.</string>
+    <string name="TextSaveHabit">Save habit</string>
+    <string name="TextHabitSaved">Habit saved</string>
+    <string name="TextHabitDeleted">Habit deleted</string>
+
 
     <!-- Habit detail -->
-    <string name="detail_streak_label">day streak</string>
-    <string name="detail_best_streak">Best: %1$d</string>
-    <string name="detail_month_completion">%1$d%% completion this month</string>
-    <string name="legend_done">Done</string>
-    <string name="legend_missed">Missed</string>
-    <string-array name="weekday_initials">
-        <item>M</item>
-        <item>T</item>
-        <item>W</item>
-        <item>T</item>
-        <item>F</item>
-        <item>S</item>
-        <item>S</item>
-    </string-array>
+    <string name="TextDetailStreakLabel">day streak</string>
+    <string name="TextDetailBestStreak">Best:</string>
+    <string name="TextDetailMonthCompletion">completion this month</string>
+    <string name="TextLegendDone">Done</string>
+    <string name="TextLegendMissed">Missed</string>
+    <string name="TextDeleteHabitDescription">Delete habit</string>
+    <string name="TextPreviousMonthDescription">Previous month</string>
+    <string name="TextNextMonthDescription">Next month</string>
+
 
     <!-- Map -->
-    <string name="map_title">Map</string>
-    <string name="map_subtitle">Where you complete your habits</string>
-    <string name="map_empty">Add a place to a habit to see it here.</string>
-    <plurals name="times_completed">
-        <item quantity="one">%d time</item>
-        <item quantity="other">%d times</item>
-    </plurals>
+    <string name="TextMapTitle">Map</string>
+    <string name="TextMapSubtitle">Where you complete your habits</string>
+    <string name="TextMapEmpty">Add a place to a habit to see it here.</string>
+    <string name="TextMapPinDescription">Habit location</string>
+    <string name="TextMyLocationDescription">My location</string>
+
 
     <!-- Choose location -->
-    <string name="location_title">Choose location</string>
-    <string name="location_search_hint">Search place</string>
-    <string name="location_move_pin">Move the pin to adjust</string>
-    <string name="location_save">Save location</string>
-    <string name="location_my_location">My location</string>
+    <string name="TextLocationTitle">Choose location</string>
+    <string name="TextLocationSearchHint">Search place</string>
+    <string name="TextLocationPlaceNameHint">Place name</string>
+    <string name="TextLocationMovePin">Move the pin to adjust</string>
+    <string name="TextLocationSave">Save location</string>
+    <string name="TextLocationMyLocation">My location</string>
+    <string name="TextLocationSaved">Location saved</string>
+
 
     <!-- Dialogs -->
-    <string name="delete_title">Delete this habit?</string>
-    <string name="delete_message">\"%1$s\" and its history will be deleted. This action cannot be undone.</string>
-    <string name="color_picker_title">Choose a color</string>
+    <string name="TextDeleteTitle">Delete this habit?</string>
+    <string name="TextDeleteMessageGeneric">This habit and its history will be deleted. This action cannot be undone.</string>
+    <string name="TextColorPickerTitle">Choose a color</string>
+
 
     <!-- Profile -->
-    <string name="profile_title">Profile</string>
-    <string name="profile_edit">Edit name and email</string>
-    <string name="profile_dark_mode">Dark mode</string>
-    <string name="profile_language">Language</string>
-    <string name="profile_language_value">English</string>
-    <string name="profile_logout">Log out</string>
+    <string name="TextProfileTitle">Profile</string>
+    <string name="TextProfileEdit">Edit name and email</string>
+    <string name="TextProfileLanguage">Language</string>
+    <string name="TextProfileLanguageValue">English</string>
+    <string name="TextProfileLogout">Log out</string>
+    <string name="TextProfilePhotoDescription">Profile photo, tap to change</string>
+
 
     <!-- Profile photo -->
-    <string name="photo_title">Profile photo</string>
-    <string name="photo_take">Take photo</string>
-    <string name="photo_choose_gallery">Choose from gallery</string>
-    <string name="photo_remove">Remove photo</string>
-    <string name="permission_camera_denied">Camera permission is needed to take a photo.</string>
-    <string name="permission_location_denied">Location permission is needed to show your position.</string>
+    <string name="TextPhotoTitle">Profile photo</string>
+    <string name="TextPhotoTake">Take photo</string>
+    <string name="TextPhotoChooseGallery">Choose from gallery</string>
+    <string name="TextPhotoRemove">Remove photo</string>
+    <string name="TextPhotoRemoved">Photo removed</string>
+    <string name="TextFeatureComingSoon">Coming soon</string>
+    <string name="TextPermissionCameraDenied">Camera permission is needed to take a photo.</string>
+    <string name="TextPermissionLocationDenied">Location permission is needed to show your position.</string>
+
+
 </resources>
