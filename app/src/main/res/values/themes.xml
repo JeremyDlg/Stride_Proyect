@@ -1,9 +1,16 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Stride_Proyect" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Stride" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/stride_accent</item>
+        <item name="colorOnPrimary">@color/stride_on_accent</item>
+        <item name="colorSecondary">@color/stride_cyan</item>
+        <item name="colorSurface">@color/stride_surface</item>
+        <item name="colorOnSurface">@color/stride_text</item>
+        <item name="android:colorBackground">@color/stride_bg</item>
+        <item name="android:windowBackground">@color/stride_bg</item>
+        <item name="android:statusBarColor">@color/stride_bg</item>
+        <item name="android:navigationBarColor">@color/stride_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
-
-    <style name="Theme.Stride_Proyect" parent="Base.Theme.Stride_Proyect" />
 </resources>

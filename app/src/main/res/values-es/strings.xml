@@ -3,9 +3,11 @@
 
 
 
+
     <!-- App -->
     <string name="app_name">Stride</string>
     <string name="TextTagline">Constancia, un día a la vez.</string>
+
 
 
 
@@ -20,10 +22,12 @@
 
 
 
+
     <!-- Navigation -->
     <string name="TextNavHome">Inicio</string>
     <string name="TextNavMap">Mapa</string>
     <string name="TextNavProfile">Perfil</string>
+
 
 
 
@@ -38,6 +42,7 @@
 
 
 
+
     <!-- Local login -->
     <string name="TextLoginSubtitle">Dinos cómo llamarte para empezar.</string>
     <string name="TextName">Nombre</string>
@@ -48,6 +53,7 @@
     <string name="TextInvalidNameError">Escribe un nombre (máximo 40 caracteres).</string>
     <string name="TextInvalidEmailError">Escribe un correo válido.</string>
     <string name="TextWelcome">Bienvenido</string>
+
 
 
 
@@ -66,16 +72,18 @@
 
 
 
+
     <!-- Words used with numbers -->
     <string name="TextDays">días</string>
     <string name="TextTimes">veces</string>
 
 
 
+
     <!-- Create / edit habit -->
     <string name="TextFormNewTitle">Nuevo hábito</string>
     <string name="TextFormEditTitle">Editar hábito</string>
-    <string name="TextHabitNameHint">ej. Leer 20 minutos</string>
+    <string name="TextHabitNameHint">p. ej. Leer 20 minutos</string>
     <string name="TextIcon">Ícono</string>
     <string name="TextIconHint">Elige un ícono o toca + para usar cualquier emoji.</string>
     <string name="TextColor">Color</string>
@@ -95,6 +103,7 @@
 
 
 
+
     <!-- Habit detail -->
     <string name="TextDetailStreakLabel">días de racha</string>
     <string name="TextDetailBestStreak">Récord:</string>
@@ -107,12 +116,14 @@
 
 
 
+
     <!-- Map -->
     <string name="TextMapTitle">Mapa</string>
     <string name="TextMapSubtitle">Dónde cumples tus hábitos</string>
     <string name="TextMapEmpty">Agrega un lugar a un hábito para verlo aquí.</string>
     <string name="TextMapPinDescription">Ubicación del hábito</string>
     <string name="TextMyLocationDescription">Mi ubicación</string>
+
 
 
 
@@ -127,10 +138,12 @@
 
 
 
+
     <!-- Dialogs -->
     <string name="TextDeleteTitle">¿Eliminar este hábito?</string>
     <string name="TextDeleteMessageGeneric">Este hábito y su historial se borrarán. Esta acción no se puede deshacer.</string>
     <string name="TextColorPickerTitle">Elige un color</string>
+
 
 
 
@@ -141,6 +154,7 @@
     <string name="TextProfileLanguageValue">Español</string>
     <string name="TextProfileLogout">Cerrar sesión</string>
     <string name="TextProfilePhotoDescription">Foto de perfil, toca para cambiarla</string>
+
 
 
 

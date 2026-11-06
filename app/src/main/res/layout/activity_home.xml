@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="24dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:letterSpacing="-0.02"
+                    android:textColor="@color/stride_text"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TextHomeTitle" />
+                <TextView
+                    android:id="@+id/dateText"
+                    android:textColor="@color/stride_muted"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    tools:text="Monday, October 12" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/stride_text"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="2/4" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="20dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipSearch"
+                    android:background="@drawable/bg_chip"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="13dp"
+                    android:paddingStart="13dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/stride_text"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/stride_muted"
+                    android:text="@string/TextFilterSearch" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipAll"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="13dp"
+                    android:paddingStart="13dp"
+                    android:paddingTop="8dp"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_chip_selected"
+                    android:text="@string/TextFilterAll"
+                    android:textColor="@color/stride_accent_light" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipPending"
+                    android:background="@drawable/bg_chip"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="13dp"
+                    android:paddingStart="13dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/stride_text"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/TextFilterPending" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipDone"
+                    android:background="@drawable/bg_chip"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="13dp"
+                    android:paddingStart="13dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/stride_text"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/TextFilterDone" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipDaily"
+                    android:background="@drawable/bg_chip"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="13dp"
+                    android:paddingStart="13dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/stride_text"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/TextFilterDaily" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipWeekly"
+                    android:background="@drawable/bg_chip"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="13dp"
+                    android:paddingStart="13dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/stride_text"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/TextFilterWeekly" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/habitList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="80dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_habit" />
+            <TextView
+                android:id="@+id/emptyText"
+                android:textColor="@color/stride_muted"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="32dp"
+                android:text="@string/TextHomeEmptyNoHabits"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_nav_pill"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp">
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/navHome"
+                android:layout_width="44dp"
+                android:layout_height="36dp"
+                android:contentDescription="@string/TextNavHome">
+                <ImageView
+                    android:id="@+id/navHomeIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_home"
+                    android:tint="@color/stride_accent_light" />
+            </FrameLayout>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/navMap"
+                android:layout_width="44dp"
+                android:layout_height="36dp"
+                android:contentDescription="@string/TextNavMap">
+                <ImageView
+                    android:id="@+id/navMapIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_map"
+                    android:tint="@color/stride_accent_light" />
+            </FrameLayout>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/navProfile"
+                android:layout_width="44dp"
+                android:layout_height="36dp"
+                android:contentDescription="@string/TextNavProfile">
+                <ImageView
+                    android:id="@+id/navProfileImage"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bg_avatar_small" />
+            </FrameLayout>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addHabitButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/bg_fab"
+        android:contentDescription="@string/TextAddHabitDescription"
+        android:elevation="6dp"
+        android:padding="13dp"
+        android:src="@drawable/ic_plus" />
+</FrameLayout>
