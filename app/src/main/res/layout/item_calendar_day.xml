@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="36dp">
+
+    <TextView
+        android:id="@+id/dayNumber"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/stride_muted"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        tools:background="@drawable/bg_day_done"
+        tools:text="12"
+        tools:textColor="@color/stride_on_accent" />
+</FrameLayout>
