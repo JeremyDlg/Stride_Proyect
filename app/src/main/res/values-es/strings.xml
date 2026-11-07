@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!-- App -->
+    <string name="app_name">Stride</string>
+    <string name="TextTagline">Constancia, un día a la vez.</string>
+
+
+
+    <!-- Common -->
+    <string name="TextContinue">Continuar</string>
+    <string name="TextCancel">Cancelar</string>
+    <string name="TextSave">Guardar</string>
+    <string name="TextEdit">Editar</string>
+    <string name="TextDelete">Eliminar</string>
+    <string name="TextBack">Atrás</string>
+    <string name="TextOptional">(opcional)</string>
+
+
+
+    <!-- Navigation -->
+    <string name="TextNavHome">Inicio</string>
+    <string name="TextNavMap">Mapa</string>
+    <string name="TextNavProfile">Perfil</string>
+
+
+
+    <!-- Weekdays -->
+    <string name="TextWeekdayInitialMon">L</string>
+    <string name="TextWeekdayInitialTue">M</string>
+    <string name="TextWeekdayInitialWed">X</string>
+    <string name="TextWeekdayInitialThu">J</string>
+    <string name="TextWeekdayInitialFri">V</string>
+    <string name="TextWeekdayInitialSat">S</string>
+    <string name="TextWeekdayInitialSun">D</string>
+
+
+
+    <!-- Local login -->
+    <string name="TextLoginSubtitle">Dinos cómo llamarte para empezar.</string>
+    <string name="TextName">Nombre</string>
+    <string name="TextEmail">Correo</string>
+    <string name="TextNameHint">Tu nombre</string>
+    <string name="TextEmailHint">tucorreo@ejemplo.com</string>
+    <string name="TextLoginPrivacyNote">Tus datos se guardan solo en este teléfono.</string>
+    <string name="TextInvalidNameError">Escribe un nombre (máximo 40 caracteres).</string>
+    <string name="TextInvalidEmailError">Escribe un correo válido.</string>
+    <string name="TextWelcome">Bienvenido</string>
+
+
+
+    <!-- Home -->
+    <string name="TextHomeTitle">Hoy</string>
+    <string name="TextFilterSearch">Buscar</string>
+    <string name="TextFilterAll">Todos</string>
+    <string name="TextFilterPending">Pendientes</string>
+    <string name="TextFilterDone">Hechos</string>
+    <string name="TextFilterDaily">Diarios</string>
+    <string name="TextFilterWeekly">Semanales</string>
+    <string name="TextHomeEmpty">Ningún hábito coincide con tu filtro.</string>
+    <string name="TextHomeEmptyNoHabits">Aún no tienes hábitos. Toca + para crear uno.</string>
+    <string name="TextHabitCompletedContentDescription">Marcar hábito como cumplido</string>
+    <string name="TextAddHabitDescription">Agregar hábito</string>
+
+
+
+    <!-- Words used with numbers -->
+    <string name="TextDays">días</string>
+    <string name="TextTimes">veces</string>
+
+
+
+    <!-- Create / edit habit -->
+    <string name="TextFormNewTitle">Nuevo hábito</string>
+    <string name="TextFormEditTitle">Editar hábito</string>
+    <string name="TextHabitNameHint">ej. Leer 20 minutos</string>
+    <string name="TextIcon">Ícono</string>
+    <string name="TextIconHint">Elige un ícono o toca + para usar cualquier emoji.</string>
+    <string name="TextColor">Color</string>
+    <string name="TextColorHint">Toca el círculo de colores para elegir el tuyo.</string>
+    <string name="TextPickColorDescription">Elegir un color personalizado</string>
+    <string name="TextFrequency">Frecuencia</string>
+    <string name="TextFrequencyDaily">Diario</string>
+    <string name="TextFrequencyWeekly">Semanal</string>
+    <string name="TextPlace">Lugar</string>
+    <string name="TextPlaceOptional">Lugar (opcional)</string>
+    <string name="TextPlaceNone">Sin lugar seleccionado</string>
+    <string name="TextNameRequiredError">El hábito necesita un nombre.</string>
+    <string name="TextSaveHabit">Guardar hábito</string>
+    <string name="TextHabitSaved">Hábito guardado</string>
+    <string name="TextHabitDeleted">Hábito eliminado</string>
+
+
+
+
+    <!-- Habit detail -->
+    <string name="TextDetailStreakLabel">días de racha</string>
+    <string name="TextDetailBestStreak">Récord:</string>
+    <string name="TextDetailMonthCompletion">de cumplimiento este mes</string>
+    <string name="TextLegendDone">Hecho</string>
+    <string name="TextLegendMissed">Falló</string>
+    <string name="TextDeleteHabitDescription">Eliminar hábito</string>
+    <string name="TextPreviousMonthDescription">Mes anterior</string>
+    <string name="TextNextMonthDescription">Mes siguiente</string>
+
+
+
+    <!-- Map -->
+    <string name="TextMapTitle">Mapa</string>
+    <string name="TextMapSubtitle">Dónde cumples tus hábitos</string>
+    <string name="TextMapEmpty">Agrega un lugar a un hábito para verlo aquí.</string>
+    <string name="TextMapPinDescription">Ubicación del hábito</string>
+    <string name="TextMyLocationDescription">Mi ubicación</string>
+
+
+
+    <!-- Choose location -->
+    <string name="TextLocationTitle">Elegir ubicación</string>
+    <string name="TextLocationSearchHint">Buscar lugar</string>
+    <string name="TextLocationPlaceNameHint">Nombre del lugar</string>
+    <string name="TextLocationMovePin">Mueve el pin para ajustar</string>
+    <string name="TextLocationSave">Guardar ubicación</string>
+    <string name="TextLocationMyLocation">Mi ubicación</string>
+    <string name="TextLocationSaved">Ubicación guardada</string>
+
+
+
+    <!-- Dialogs -->
+    <string name="TextDeleteTitle">¿Eliminar este hábito?</string>
+    <string name="TextDeleteMessageGeneric">Este hábito y su historial se borrarán. Esta acción no se puede deshacer.</string>
+    <string name="TextColorPickerTitle">Elige un color</string>
+
+
+
+    <!-- Profile -->
+    <string name="TextProfileTitle">Perfil</string>
+    <string name="TextProfileEdit">Editar nombre y correo</string>
+    <string name="TextProfileLanguage">Idioma</string>
+    <string name="TextProfileLanguageValue">Español</string>
+    <string name="TextProfileLogout">Cerrar sesión</string>
+    <string name="TextProfilePhotoDescription">Foto de perfil, toca para cambiarla</string>
+
+
+
+    <!-- Profile photo -->
+    <string name="TextPhotoTitle">Foto de perfil</string>
+    <string name="TextPhotoTake">Tomar foto</string>
+    <string name="TextPhotoChooseGallery">Elegir de la galería</string>
+    <string name="TextPhotoRemove">Quitar foto</string>
+    <string name="TextPhotoRemoved">Foto eliminada</string>
+    <string name="TextPermissionCameraDenied">Se necesita el permiso de la cámara para tomar una foto.</string>
+    <string name="TextPermissionLocationDenied">Se necesita el permiso de ubicación para mostrar tu posición.</string>
+
+
+
+</resources>

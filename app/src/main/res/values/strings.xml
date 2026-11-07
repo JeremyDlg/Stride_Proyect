@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!-- App -->
+    <string name="app_name">Stride</string>
+    <string name="TextTagline">Consistency, one day at a time.</string>
+
+
+
+    <!-- Common -->
+    <string name="TextContinue">Continue</string>
+    <string name="TextCancel">Cancel</string>
+    <string name="TextSave">Save</string>
+    <string name="TextEdit">Edit</string>
+    <string name="TextDelete">Delete</string>
+    <string name="TextBack">Back</string>
+    <string name="TextOptional">(optional)</string>
+
+
+    <!-- Navigation -->
+    <string name="TextNavHome">Home</string>
+    <string name="TextNavMap">Map</string>
+    <string name="TextNavProfile">Profile</string>
+
+
+    <!-- Weekdays -->
+    <string name="TextWeekdayInitialMon">M</string>
+    <string name="TextWeekdayInitialTue">T</string>
+    <string name="TextWeekdayInitialWed">W</string>
+    <string name="TextWeekdayInitialThu">T</string>
+    <string name="TextWeekdayInitialFri">F</string>
+    <string name="TextWeekdayInitialSat">S</string>
+    <string name="TextWeekdayInitialSun">S</string>
+
+
+    <!-- Local login -->
+    <string name="TextLoginSubtitle">Tell us what to call you to get started.</string>
+    <string name="TextName">Name</string>
+    <string name="TextEmail">Email</string>
+    <string name="TextNameHint">Your name</string>
+    <string name="TextEmailHint">youremail@example.com</string>
+    <string name="TextLoginPrivacyNote">Your data is stored only on this phone.</string>
+    <string name="TextInvalidNameError">Enter a name (up to 40 characters).</string>
+    <string name="TextInvalidEmailError">Enter a valid email address.</string>
+    <string name="TextWelcome">Welcome</string>
+
+
+    <!-- Home -->
+    <string name="TextHomeTitle">Today</string>
+    <string name="TextFilterSearch">Search</string>
+    <string name="TextFilterAll">All</string>
+    <string name="TextFilterPending">Pending</string>
+    <string name="TextFilterDone">Done</string>
+    <string name="TextFilterDaily">Daily</string>
+    <string name="TextFilterWeekly">Weekly</string>
+    <string name="TextHomeEmpty">No habits match your filter.</string>
+    <string name="TextHomeEmptyNoHabits">You have no habits yet. Tap + to create one.</string>
+    <string name="TextHabitCompletedContentDescription">Mark habit as completed</string>
+    <string name="TextAddHabitDescription">Add habit</string>
+
+
+    <!-- Words used with numbers -->
+    <string name="TextDays">days</string>
+    <string name="TextTimes">times</string>
+
+
+    <!-- Create / edit habit -->
+    <string name="TextFormNewTitle">New habit</string>
+    <string name="TextFormEditTitle">Edit habit</string>
+    <string name="TextHabitNameHint">e.g. Read 20 minutes</string>
+    <string name="TextIcon">Icon</string>
+    <string name="TextIconHint">Choose an icon or tap + to use any emoji.</string>
+    <string name="TextColor">Color</string>
+    <string name="TextColorHint">Tap the color circle to pick your own.</string>
+    <string name="TextPickColorDescription">Pick a custom color</string>
+    <string name="TextFrequency">Frequency</string>
+    <string name="TextFrequencyDaily">Daily</string>
+    <string name="TextFrequencyWeekly">Weekly</string>
+    <string name="TextPlace">Place</string>
+    <string name="TextPlaceOptional">Place (optional)</string>
+    <string name="TextPlaceNone">No place selected</string>
+    <string name="TextNameRequiredError">The habit needs a name.</string>
+    <string name="TextSaveHabit">Save habit</string>
+    <string name="TextHabitSaved">Habit saved</string>
+    <string name="TextHabitDeleted">Habit deleted</string>
+
+
+    <!-- Habit detail -->
+    <string name="TextDetailStreakLabel">day streak</string>
+    <string name="TextDetailBestStreak">Best:</string>
+    <string name="TextDetailMonthCompletion">completion this month</string>
+    <string name="TextLegendDone">Done</string>
+    <string name="TextLegendMissed">Missed</string>
+    <string name="TextDeleteHabitDescription">Delete habit</string>
+    <string name="TextPreviousMonthDescription">Previous month</string>
+    <string name="TextNextMonthDescription">Next month</string>
+
+
+    <!-- Map -->
+    <string name="TextMapTitle">Map</string>
+    <string name="TextMapSubtitle">Where you complete your habits</string>
+    <string name="TextMapEmpty">Add a place to a habit to see it here.</string>
+    <string name="TextMapPinDescription">Habit location</string>
+    <string name="TextMyLocationDescription">My location</string>
+
+
+    <!-- Choose location -->
+    <string name="TextLocationTitle">Choose location</string>
+    <string name="TextLocationSearchHint">Search place</string>
+    <string name="TextLocationPlaceNameHint">Place name</string>
+    <string name="TextLocationMovePin">Move the pin to adjust</string>
+    <string name="TextLocationSave">Save location</string>
+    <string name="TextLocationMyLocation">My location</string>
+    <string name="TextLocationSaved">Location saved</string>
+
+
+    <!-- Dialogs -->
+    <string name="TextDeleteTitle">Delete this habit?</string>
+    <string name="TextDeleteMessageGeneric">This habit and its history will be deleted. This action cannot be undone.</string>
+    <string name="TextColorPickerTitle">Choose a color</string>
+
+
+    <!-- Profile -->
+    <string name="TextProfileTitle">Profile</string>
+    <string name="TextProfileEdit">Edit name and email</string>
+    <string name="TextProfileLanguage">Language</string>
+    <string name="TextProfileLanguageValue">English</string>
+    <string name="TextProfileLogout">Log out</string>
+    <string name="TextProfilePhotoDescription">Profile photo, tap to change</string>
+
+
+    <!-- Profile photo -->
+    <string name="TextPhotoTitle">Profile photo</string>
+    <string name="TextPhotoTake">Take photo</string>
+    <string name="TextPhotoChooseGallery">Choose from gallery</string>
+    <string name="TextPhotoRemove">Remove photo</string>
+    <string name="TextPhotoRemoved">Photo removed</string>
+    <string name="TextPermissionCameraDenied">Camera permission is needed to take a photo.</string>
+    <string name="TextPermissionLocationDenied">Location permission is needed to show your position.</string>
+
+
+</resources>
