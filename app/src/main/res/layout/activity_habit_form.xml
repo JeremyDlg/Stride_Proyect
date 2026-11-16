@@ -74,6 +74,7 @@
                         android:layout_gravity="center"
                         android:importantForAccessibility="no"
                         android:src="@drawable/ic_drop"
+                        android:id="@+id/iconDropImage"
                         android:tint="@color/stride_accent_light" />
                 </FrameLayout>
                 <FrameLayout
@@ -87,6 +88,7 @@
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:importantForAccessibility="no"
+                        android:id="@+id/iconActivityImage"
                         android:src="@drawable/ic_activity"
                         android:tint="@color/stride_muted" />
                 </FrameLayout>
@@ -101,6 +103,7 @@
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:importantForAccessibility="no"
+                        android:id="@+id/iconBookImage"
                         android:src="@drawable/ic_book"
                         android:tint="@color/stride_muted" />
                 </FrameLayout>
@@ -115,6 +118,7 @@
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:importantForAccessibility="no"
+                        android:id="@+id/iconSunImage"
                         android:src="@drawable/ic_sun"
                         android:tint="@color/stride_muted" />
                 </FrameLayout>
@@ -129,6 +133,7 @@
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:importantForAccessibility="no"
+                        android:id="@+id/iconLeafImage"
                         android:src="@drawable/ic_leaf"
                         android:tint="@color/stride_muted" />
                 </FrameLayout>
@@ -190,6 +195,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="6dp"
+                    android:id="@+id/colorBlueRing"
                     android:padding="4dp" android:background="@drawable/bg_dot_ring">
                     <View
                         android:id="@+id/colorBlue"
@@ -202,6 +208,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="6dp"
+                    android:id="@+id/colorCyanRing"
                     android:padding="4dp">
                     <View
                         android:id="@+id/colorCyan"
@@ -214,6 +221,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="6dp"
+                    android:id="@+id/colorGoldRing"
                     android:padding="4dp">
                     <View
                         android:id="@+id/colorGold"
@@ -226,6 +234,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="6dp"
+                    android:id="@+id/colorGreenRing"
                     android:padding="4dp">
                     <View
                         android:id="@+id/colorGreen"

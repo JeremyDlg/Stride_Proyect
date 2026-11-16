@@ -2,6 +2,8 @@ package com.stride.app.util
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import com.stride.app.R
 import com.stride.app.domain.model.CalendarDay
 import com.stride.app.domain.model.DayState
 import java.time.LocalDate
@@ -19,6 +21,24 @@ class Util {
                          extraName: String = "", value: String? = null) {
             val intent = Intent(context, objClass).apply { putExtra(extraName, value) }
             context.startActivity(intent)
+        }
+
+        fun getIconResource(icon: String): Int {
+            when (icon) {
+                "activity" -> return R.drawable.ic_activity
+                "book" -> return R.drawable.ic_book
+                "sun" -> return R.drawable.ic_sun
+                "leaf" -> return R.drawable.ic_leaf
+            }
+            return R.drawable.ic_drop
+        }
+
+        fun getColorValue(color: String): Int {
+            try {
+                return Color.parseColor(color)
+            } catch (e: IllegalArgumentException) {
+                return Color.parseColor("#007AFF")
+            }
         }
 
         fun isValidName(name: String): Boolean {

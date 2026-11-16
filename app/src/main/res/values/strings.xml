@@ -58,6 +58,7 @@
     <string name="TextFilterDaily">Daily</string>
     <string name="TextFilterWeekly">Weekly</string>
     <string name="TextHomeEmpty">No habits match your filter.</string>
+    <string name="TextSearchHabitHint">Search habits</string>
     <string name="TextHomeEmptyNoHabits">You have no habits yet. Tap + to create one.</string>
     <string name="TextHabitCompletedContentDescription">Mark habit as completed</string>
     <string name="TextAddHabitDescription">Add habit</string>
@@ -87,7 +88,9 @@
     <string name="TextPlaceNone">No place selected</string>
     <string name="TextNameRequiredError">The habit needs a name.</string>
     <string name="TextSaveHabit">Save habit</string>
+    <string name="TextSaveChanges">Save changes</string>
     <string name="TextHabitSaved">Habit saved</string>
+    <string name="TextHabitUpdated">Habit updated</string>
     <string name="TextHabitDeleted">Habit deleted</string>
 
 
@@ -127,6 +130,8 @@
     <!-- Dialogs -->
     <string name="TextDeleteTitle">Delete this habit?</string>
     <string name="TextDeleteMessageGeneric">This habit and its history will be deleted. This action cannot be undone.</string>
+    <string name="TextUpdateTitle">Save changes?</string>
+    <string name="TextUpdateMessageGeneric">The habit information will be updated.</string>
     <string name="TextColorPickerTitle">Choose a color</string>
 
 
